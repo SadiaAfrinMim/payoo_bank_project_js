@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone border-primary">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-5">
+                <!-- availabale amount start-->
+                <div class="stats shadow">
+                    <div class="stat">
+                      <div class="stat-title">Total Page Views</div>
+                      <div id="availableammount" class="stat-value">89400</div>
+                      <div class="stat-desc"> availabale amount</div>
+                    </div>
+                  </div>
+                 <!-- available amount end -->
+                 <div class="divider"></div>
+                  <!-- btn-show option start -->
+                 <div class="grid grid-cols-3 gap-2 ">
+                    <button id="clickedshowaddmoney" class="btn btn-lg">Add oney</button>
+                    <button id="clickedshowcashoutmoney" class="btn btn-lg">cashout</button>
+                    
+                    <button id="clickedshowtrasefer" class="btn btn-lg">Transfer money</button>
+
+                    <button id="clickedshowgetbonus" class="btn btn-lg">Get Bonus</button>
+                    <button id="clickedshowbillpay" class="btn btn-lg">bill pay</button>
+                    <button id="clickedshowtrasections" class="btn btn-lg">Transection</button>
+                    
+                 </div>
+                   
+                   <!-- btn-show option end -->
+             
+                      <div class="divider"></div>
+                      <!-- add-money-section start -->
+                      <div id="add-money-show-section" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span  class="label-text">Add money</span>
+                            </label>
+                            <input id="addmoneyinput" type="number" placeholder="Add money" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">pin</span>
+                            </label>
+                            <input id="addmoneypin" type="password" placeholder="pin number" class="input input-bordered" required  autocomplete="off"/>
+                          
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="addmoneybtn" class="btn btn-primary">Add money</button>
+                          </div>
+                        </form>
+                      </div>
+                      <!-- add-money-section end -->
+                       <!-- cashout start -->
+                       <div id="cashout-show-section" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">cashout money</span>
+                            </label>
+                            <input id="cashoutmoney"  type="number" placeholder="cashout money" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span  class="label-text">pin</span>
+                            </label>
+                            <input id="cashoutpin" type="password" placeholder="pin number" class="input input-bordered" required  autocomplete="off"/>
+                           
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="cashoutbtn" class="btn btn-primary">cashout</button>
+                          </div>
+                        </form>
+                      </div>
+                        <!-- cashout end -->
+                         <!-- transection start -->
+                          <div id="transection-section" class="hidden">
+                            <h1 class="text-2xl text-center font-bold mb-4">transection section</h1>
+                            <div id="transection-show" class="space-y-3">
+
+                            </div>
+                          </div>
+                          <!-- transection end -->
+
+                          <!-- transefer money start -->
+                          <div id="transfer-show-section" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                                <div class="form-control">
+                                    <label class="label">
+                                      <span class="label-text">account number</span>
+                                    </label>
+                                    <input id="transfaraccountnumber"  type="number" placeholder="account number" class="input input-bordered" required />
+                                  </div>
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">transefer money</span>
+                                </label>
+                                <input id="transfarmoney"  type="number" placeholder="cashout money" class="input input-bordered" required />
+                              </div>
+                              <div class="form-control">
+                                <label class="label">
+                                  <span  class="label-text">pin</span>
+                                </label>
+                                <input id="transferpin" type="password" placeholder="pin number" class="input input-bordered" required  autocomplete="off"/>
+                               
+                              </div>
+                              <div class="form-control mt-6">
+                                <button id="transeferbtn" class="btn btn-primary">cashout</button>
+                              </div>
+                            </form>
+                          </div>
+
+                           <!-- transefer money end -->
+                            <!-- get bonus start -->
+
+                            <div id="getbonus-show-section" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <form class="card-body">
+                                  
+                                  <div class="form-control">
+                                    <label class="label">
+                                      <span  class="label-text">copun code</span>
+                                    </label>
+                                    <input id="couponinput" type="password" placeholder="copun code" class="input input-bordered" required  autocomplete="off"/>
+                                   
+                                  </div>
+                                  <div class="form-control mt-6">
+                                    <button id="getbonusbtn" class="btn btn-primary">get bonus</button>
+                                  </div>
+                                </form>
+                              </div>
+
+                             <!-- get bonus end -->
+                              <!-- bill pay start -->
+                              <div id="billpay-show-section" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <form class="card-body">
+                                    <div class="form-control">
+                                        <label class="label">
+                                          <span class="label-text">selet to pay</span>
+                                        </label>
+                                        <select id="selectopay" ame="paymentMethod" id="paymentMethod" class="input input-bordered" required  >
+                                            <option value="creditCard">Credit Card</option>
+                                            <option value="debitCard">Debit Card</option>
+                                            <option value="paypal">PayPal</option>
+                                            <option value="bankTransfer">Bank Transfer</option>
+                                        </select>
+                                      </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                          <span class="label-text">biller account number</span>
+                                        </label>
+                                        <input id="billpayaccount"  type="number" placeholder="bill account number" class="input input-bordered" required />
+                                      </div>
+                                  <div class="form-control">
+                                    <label class="label">
+                                      <span class="label-text">amount to pay</span>
+                                    </label>
+                                    <input id="billpaymoney"  type="number" placeholder="amount to pay" class="input input-bordered" required />
+                                  </div>
+                                  <div class="form-control">
+                                    <label class="label">
+                                      <span  class="label-text">pin</span>
+                                    </label>
+                                    <input id="billpaypin" type="password" placeholder="pin number" class="input input-bordered" required  autocomplete="off"/>
+                                   
+                                  </div>
+                                  <div class="form-control mt-6">
+                                    <button id="billpaybtn" class="btn btn-primary">cashout</button>
+                                  </div>
+                                </form>
+                              </div>
+                               <!-- bil pay end -->
+                    
+              </div>
+            </div>
+          </div>
+        
+    </main>
+    <script src="utility.js"></script>
+    <script src="js/addmoney.js"></script>
+    <script src="js/cashout.js"></script>
+    <script src="js/feature.js"></script>
+    <script src="js/transfer.js"></script>
+    <script src="js/getbonus.js"></script>
+    <script src="js/billpay.js"></script>
+    
+    
+</body>
+</html>
